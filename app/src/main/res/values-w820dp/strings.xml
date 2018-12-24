@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MaterialStepper</string>
+    <string name="ms_end">COMPLETE</string>
+    <string name="ms_optional">Optional</string>
+    <string name="content_desc">contentDescription</string>
+</resources>

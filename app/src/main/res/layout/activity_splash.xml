@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true">
+
+    <!--<include layout="@layout/content_splash" />-->
+
+    <me.wangyuwei.particleview.ParticleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/practical_view"
+        pv:pv_background_color="@color/colorPrimaryDark"
+        pv:pv_host_text="AeCRM"
+        pv:pv_host_text_size="46sp"
+        pv:pv_particle_text="Aezion"
+        pv:pv_particle_text_size="26sp"
+        pv:pv_text_color="#FFF"
+        pv:pv_text_anim_time="1800"
+        pv:pv_spread_anim_time="500"
+        pv:pv_host_text_anim_time="500" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

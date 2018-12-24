@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_dashboard"
+                android:icon="@drawable/ic_dashboard_black_24dp"
+                android:title="@string/dashboard" />
+        <item
+                android:id="@+id/nav_accounts"
+                android:icon="@drawable/ic_supervisor_account_black_24dp"
+                android:title="@string/accounts" />
+        <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings"
+                android:title="@string/settings" />
+        <item
+                android:id="@+id/nav_proposals"
+                android:icon="@drawable/ic_extension_black_24dp"
+                android:title="@string/proposals" />
+        <item
+                android:id="@+id/nav_arc"
+                android:visible="false"
+                android:icon="@drawable/ic_extension_black_24dp"
+                android:title="@string/arc" />
+        <item
+                android:id="@+id/nav_diagonal"
+                android:visible="false"
+                android:icon="@drawable/ic_extension_black_24dp"
+                android:title="@string/diagonal" />
+        <item
+                android:id="@+id/nav_movie"
+                android:visible="false"
+                android:icon="@drawable/ic_extension_black_24dp"
+                android:title="@string/movie" />
+
+</group>
+</menu>

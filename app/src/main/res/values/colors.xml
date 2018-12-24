@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#f0b515</color>
+    <color name="colorPrimaryDark">#e67e24</color>-->
+    <!--<color name="colorPrimary">#f0b515</color>
+    <color name="colorPrimaryDark">#e67e24</color>-->
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="colorPD">#303F9F</color>
+    <color name="circle_close">#dbdbdb</color>
+
+    <!--<color name="colorPrimary">#E6BB2D</color>
+    <color name="colorPrimaryDark">#DBA800</color>
+    <color name="colorAccent">#D81B60</color>-->
+    <color name="pop_head_txt">#707070</color>
+    <color name="red_signin">#E54470</color>
+    <color name="pros_color_type">#E84242</color>
+    <color name="proposal_amount">#218F00</color>
+    <color name="color_white">#fefefe</color>
+    <color name="white">#ffffff</color>
+    <color name="black_name">#424242</color>
+    <color name="sub_title">#676767</color>
+
+    <color name="colorBackground">#dad9cc</color>
+</resources>

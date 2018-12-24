@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+    >
+        <ImageView
+                android:id="@+id/img_header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:alpha="0.8"
+                android:src="@drawable/download"
+                android:contentDescription="@string/todo"/>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rel_img_id"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="110dp"
+                        android:layout_marginStart="10dp">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img_id"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="6dp"       >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_profile"
+                    android:transitionName="robot"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/download"
+                    android:contentDescription="@string/todo"
+            />
+
+
+
+        </androidx.cardview.widget.CardView>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/april_walker"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                      android:textColor="@android:color/white"
+                      android:layout_marginStart="10dp"
+                      android:id="@+id/contact_name"
+                      android:layout_toEndOf="@+id/img_id"
+
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/eligibility_consultants_inc"
+                      android:id="@+id/contact_company"
+                      android:textColor="@android:color/white"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:alpha="0.8"
+                      android:layout_below="@+id/contact_name"
+                      android:layout_toEndOf="@+id/img_id"
+
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/it_director"
+                      android:alpha="0.8"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                      android:textColor="@android:color/white"
+                      android:layout_below="@+id/contact_name"
+                      android:layout_toEndOf="@+id/contact_company"
+
+            />
+
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rel_img_id"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:text="@string/walker_eciassist_com"
+        />
+
+        <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:alpha="0.7"
+                android:textColor="@color/black_name"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                android:text="@string/_330_878_4072"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upcome_appoint"
+                app:layout_constraintTop_toBottomOf="@+id/website"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/upcoming_appointments"
+            />
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/circle_add"
+            >
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        app:srcCompat="@drawable/ic_add_black_24dp"
+
+                />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+                android:layout_margin="10dp"
+                android:id="@+id/appointment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/upcome_appoint"
+
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_container"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+    >
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginBottom="16dp"
+                  android:id="@+id/proposal_name"
+                  android:text="@string/paladin_web"
+                  android:textColor="@color/black_name"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+        />
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/hot"
+                android:id="@+id/pros_type"
+                android:alpha="0.9"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/pros_color_type"
+
+        />
+
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/item_desc"
+                  android:textColor="@color/sub_title"
+                  android:id="@+id/pros_desc"
+                  android:layout_margin="8dp"
+                  app:layout_constraintTop_toBottomOf="@+id/pros_type"
+
+        />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/contacts_4"
+                  android:id="@+id/pros_contact_id"
+                  android:layout_margin="16dp"
+                  app:layout_constraintTop_toBottomOf="@+id/pros_desc"
+
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/pros_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/pros_contact_id"
+
+        />
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/pros_item_list"
+                app:tabMode="fixed"/>
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tabs_main"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

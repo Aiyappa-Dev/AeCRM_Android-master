@@ -1,0 +1,5 @@
+<resources>
+    <!--Kishore-->
+
+    <dimen name="peek_height_bottom">110dp</dimen>
+</resources>

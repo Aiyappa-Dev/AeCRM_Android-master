@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">AeCRM</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="sign_in1">SIGN IN</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="accounts">Accounts</string>
+    <string name="settings">Settings</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Dashboard</item>
+        <item>Accounts</item>
+        <item>Settings</item>
+        <item>Proposals</item>
+    </string-array>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="todo">TODO</string>
+    <string name="prospects">Prospects</string>
+    <string name="contacts">Contacts</string>
+    <string name="deals">Deals</string>
+    <string name="proposals">Proposals</string>
+    <string name="arc">Arc</string>
+    <string name="diagonal">Diagonal</string>
+    <string name="movie">Movie</string>
+    <string name="desc">Desc</string>
+    <string name="aiyappa_td_aezion_com">Aiyappa.td@aezion.com</string>
+    <string name="aiyappa">Aiyappa</string>
+    <string name="anna_farmer">Anna Farmer</string>
+    <string name="it_director">IT Director</string>
+    <string name="hot">HOT</string>
+    <string name="lorem_ipsum">lorem_ipsum</string>
+    <string name="_8942">⋮</string>
+    <string name="paladin_web">Paladin Web</string>
+    <string name="april_walker">April Walker</string>
+    <string name="eligibility_consultants_inc">Eligibility Consultants Inc.</string>
+
+    <!--Rating Dialog-->
+    <string name="erd_title">Rate this app</string>
+    <!--<string name="erd_message">Hi, take a minute to rate this app and help support to improve more new features. ;)</string>-->
+    <string name="erd_message">Liked AeTime?</string>
+    <string name="erd_no_thanks">No, thanks.</string>
+    <string name="erd_remind_me_later">Remind me later.</string>
+    <string name="erd_rate_now">Rate now.</string>
+    <string name="app_intro">App Intro</string>
+    <string name="contact">Contacts</string>
+    <string name="accounts_fragment">Accounts fragment</string>
+    <string name="dashboard_fragment1">dashboard fragment1</string>
+    <string name="proposals_fragment">proposals fragment</string>
+    <string name="settings_framgent">settings framgent</string>
+    <string name="all_upcoming_appointments">ALL UPCOMING APPOINTMENTS</string>
+    <string name="tsk">TSK</string>
+    <string name="powered_by_aezion">Powered by Aezion</string>
+    <string name="coming_soon">Coming Soon...</string>
+    <string name="_08_00">08:00</string>
+    <string name="walker_eciassist_com">Walker@eciassist.com</string>
+    <string name="_330_878_4072">330-878-4072</string>
+    <string name="upcoming_appointments">UPCOMING APPOINTMENTS</string>
+    <string name="pit_stop_auto_google_feeds">Pit Stop Auto Google Feeds</string>
+    <string name="total_value">Total Value $45,654.00</string>
+    <string name="_45_654_00">$45,654.00</string>
+    <string name="service_a2bc6">Service A2BC6</string>
+    <string name="item_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque arcu, vel
+        fermentum quam viverra id. In porttitor efficitur erat eu aliquet.
+    </string>
+    <string name="discounted">Discounted</string>
+    <string name="price_type">Price type</string>
+    <string name="fixed_bid">Fixed bid</string>
+    <string name="billing_type">Billing type</string>
+    <string name="discovery">Discovery</string>
+    <string name="type">Type</string>
+    <string name="proposal_items">PROPOSAL ITEMS</string>
+    <string name="contacts_4">CONTACTS (4)</string>
+    <string name="first_tab">First tab</string>
+    <string name="search">Search</string>
+
+</resources>

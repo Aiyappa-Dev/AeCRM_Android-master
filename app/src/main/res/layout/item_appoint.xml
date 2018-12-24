@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="8dp"
+                  android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+        >
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:id="@+id/day_id"
+                    android:textColor="@color/black_name"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    card_view:layout_constraintStart_toEndOf="@id/img_profile"
+                    android:text="20"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.73"
+                    android:id="@+id/header_id"
+                    android:textColor="@color/black_name"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:text="@string/eligibility_consultants_inc"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_id"
+                    android:gravity="center"
+                    android:textColor="@color/black_name"
+                    android:alpha="0.6"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/_08_00"
+            />
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+        >
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.12"
+                    android:id="@+id/month_id"
+                    android:textColor="@color/black_name"
+                    android:alpha="0.6"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    card_view:layout_constraintStart_toEndOf="@id/img_profile"
+                    android:text="OCT"
+            />
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.73"
+                    android:id="@+id/desc_id"
+                    android:textColor="@color/black_name"
+                    android:alpha="0.6"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:text="@string/eligibility_consultants_inc"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

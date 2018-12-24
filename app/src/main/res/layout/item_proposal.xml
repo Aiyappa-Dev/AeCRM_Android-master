@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textColor="@color/black_name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                card_view:layout_constraintStart_toEndOf="@id/img_profile"
+                android:text="@string/april_walker"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/company"
+                android:textColor="@color/black_name"
+                android:alpha="0.6"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/eligibility_consultants_inc"
+                card_view:layout_constraintStart_toEndOf="@id/img_profile"
+                card_view:layout_constraintTop_toBottomOf="@id/name"
+                />
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:id="@+id/lin_id"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/propos_image_bg"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:layout_margin="8dp"
+                card_view:srcCompat="@drawable/ic_account_balance_black_24dp"
+               />
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/designation"
+                android:text="@string/it_director"
+                android:textColor="@color/proposal_amount"
+                card_view:layout_constraintStart_toEndOf="@id/img_profile"
+                card_view:layout_constraintTop_toBottomOf="@id/company"
+                />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

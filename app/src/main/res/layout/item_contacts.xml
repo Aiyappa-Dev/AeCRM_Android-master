@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="5dp"
+        android:transitionGroup="true"
+        card_view:cardElevation="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+    >
+        <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_card"
+                card_view:cardElevation="1dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:layout_constraintBottom_toBottomOf="@+id/action_lin"
+                card_view:layout_constraintTop_toTopOf="@+id/name"
+        >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_profile"
+                    android:scaleType="fitXY"
+                    android:transitionName="robot"
+                    android:contentDescription="@string/todo"
+                    card_view:srcCompat="@drawable/download"
+            />
+        </androidx.cardview.widget.CardView>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textColor="@android:color/black"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                card_view:layout_constraintStart_toEndOf="@id/img_card"
+                android:layout_marginStart="10dp"
+                android:text="@string/april_walker"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/company"
+                android:textColor="@android:color/black"
+                android:alpha="0.8"
+                android:text="@string/eligibility_consultants_inc"
+                card_view:layout_constraintStart_toEndOf="@id/img_card"
+                card_view:layout_constraintTop_toBottomOf="@id/name"
+                android:layout_marginStart="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/designation"
+                android:textColor="@android:color/black"
+                android:alpha="0.5"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:text="@string/it_director"
+                card_view:layout_constraintStart_toEndOf="@id/img_card"
+                card_view:layout_constraintTop_toBottomOf="@id/company"
+                android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/action_lin"
+                android:weightSum="6"
+                android:gravity="end"
+                card_view:layout_constraintTop_toBottomOf="@id/designation"
+                card_view:layout_constraintEnd_toEndOf="parent"
+
+        >
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/todo"
+                    android:id="@+id/date"
+                    card_view:srcCompat="@drawable/ic_date_range_black_24dp"
+            />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:src="@drawable/ic_local_phone_black_24dp"
+                    android:contentDescription="@string/todo"
+                    card_view:layout_constraintStart_toEndOf="@+id/date"
+            />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post"
+                    android:src="@drawable/ic_local_post_office_black_24dp"
+                    card_view:layout_constraintStart_toEndOf="@id/phone"
+                    android:contentDescription="@string/todo"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

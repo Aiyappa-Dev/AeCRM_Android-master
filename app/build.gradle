@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.aezion.aecrm"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        setProperty("archivesBaseName", "AeCRM")
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+
+    /*custom shape to any android view, Material Design 2 ready*/
+    implementation 'com.github.florent37:shapeofview:1.4.6'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    /*glide Image Loader*/
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    /*volley*/
+    implementation 'com.android.volley:volley:1.1.1'
+    /*gson*/
+    implementation 'com.google.code.gson:gson:2.8.5'
+    /*crash reporter*/
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.6'
+    /*elastic views click action*/
+    implementation "com.github.skydoves:elasticviews:2.0.1"
+    /*Button Animation */
+    //implementation 'com.ncorti:slidetoact:0.5.1'
+    /*Particle View SplashScreen*/
+    implementation 'me.wangyuwei:ParticleView:1.0.4'
+    /*Rating Dialog*/
+    implementation 'com.github.fernandodev.easyratingdialog:easyratingdialog:1.1.2'
+    /*multi dex*/
+    implementation 'androidx.multidex:multidex:2.0.0'
+    /*Make a cool intro for your Android app*/
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
+
+}
